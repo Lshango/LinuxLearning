@@ -6,7 +6,7 @@ int main(int argc, char* argv[]){
 		printf("i = %d\n", i);
 	}
 
-	pid_t pid = -1;
+	unsigned int pid = -1;
 	pid = fork();
 
 	if (pid > 0) {
