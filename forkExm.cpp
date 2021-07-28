@@ -21,7 +21,7 @@ int main(int args, char* argv[]){
     }else if(pid == 0) {
         cout << "----------------------------------------------------------\n" << 
         "This is the child process " << getpid() << ", parent process " << getppid() << endl;
-        execl("/bin/ls", "wanghao", nullptr);
+        execl("/bin/ls", "ls", "-al", "/home/wanghao", NULL);
         cout << "Child process finish" << endl;
     }
 
